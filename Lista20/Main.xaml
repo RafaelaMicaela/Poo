@@ -5,19 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="Viagem" Height="312.5" Width="577.5">
-    <Grid RenderTransformOrigin="0.513,0.513">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="271*"/>
-            <ColumnDefinition Width="3*"/>
-        </Grid.ColumnDefinitions>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="29,54,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-0.557,0.85"/>
-        <TextBox Height="23" Margin="192,54,242,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" RenderTransformOrigin="-0.342,0.609"/>
-        <TextBlock HorizontalAlignment="Left" Margin="192,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="89" Height="16"><Run Text="T"/><Run Text="empo  - h"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="29,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-6.327,-14" Width="94" Height="16"><Run Text="Distância"/><Run Text=" "/><Run Text="-"/><Run Text=" Km"/><Run Text=" "/></TextBlock>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="102,82,0,0" VerticalAlignment="Top" Width="90" Height="22"/>
-        <TextBlock HorizontalAlignment="Left" Margin="29,124,0,0" TextWrapping="Wrap" Text="Velocida - Km/h" VerticalAlignment="Top" Width="94" Height="25"/>
-        <TextBox HorizontalAlignment="Left" Height="30" Margin="29,154,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        Title="Viagem" Height="270" Width="270">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="22,21,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="98" Height="18"><Run Text="Distância"/><Run Text=" - K"/><Run Text="m"/></TextBlock>
+        <TextBox x:Name ="distancia" HorizontalAlignment="Left" Height="23" Margin="22,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108"/>
+        <TextBlock HorizontalAlignment="Left" Margin="161,21,0,0" TextWrapping="Wrap" Text="Tempo - h" VerticalAlignment="Top" Height="18" Width="68"/>
+        <TextBox x:Name ="tempo" HorizontalAlignment="Left" Height="23" Margin="146,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="109" RenderTransformOrigin="0.498,0.531"/>
+        <Button Content="Calcular" HorizontalAlignment="Left" Margin="82,104,0,0" VerticalAlignment="Top" Width="94" Height="23" Click="Button_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="22,142,0,0" TextWrapping="Wrap" Text="Velocidade - Km/h" VerticalAlignment="Top" Width="98" Height="17"/>
+        <TextBox x:Name ="velocidade" HorizontalAlignment="Left" Height="29" Margin="22,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154"/>
 
     </Grid>
 </Window>
