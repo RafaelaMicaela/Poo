@@ -24,5 +24,13 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Viagem v = new Viagem();
+            v.SetDistancia(double.Parse(distancia.Text));
+            v.SetTempo(double.Parse(tempo.Text));
+            velocidade.Text = v.CalcDistancia().ToString();
+        }
     }
 }
